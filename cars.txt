@@ -1,30 +1,27 @@
 CARS
-
-serial_number
-brand
-model
-segment
-power_kw/t
-engine
-Transmission
-displacement
-tyre_type
-year
-distance_km
-last_check
-doors
-passengers
-exterior_color
-Interior_color
-alloy_wheels
-price 
-foto 
-weight_kg
-width_m
-height_m
-rating - FLOAT
-crash_test_rating
-optional
-key
-
-
+serial_number INT - UNSIGNED PRIMARY KEY - NOTNULL - UNIQUE
+brand - VARCHAR(30) - NOTNULL
+model  - VARCHAR(255) - NOTNULL - UNIQUE
+description - TEXT - NULL
+fuel - VARCHAR(10) - NOTNULL
+price price - INT - UNSIGNED INT - NULL
+segment - VARCHAR(10) - NOTNULL
+power_kw/t - VARCHAR(15) - NOTNULL
+engine - VARCHAR(20) - NULL
+automatict_Transmission - TINYINT - NOTNULL - DEFAULT(false)
+displacement_short - FLOAT(2,1) - NOTNULL           es 1.9
+tyre_type - VARCHAR(10) - NULL
+year - YEAR - NOTNULL
+doors - INT UNSIGNED - NULL
+passengers - INT UNSIGNED - NULL
+exterior_color - VARCHAR(15) - NULL
+Interior_color - VARCHAR(15) - NOTNULL
+alloy_wheels TINYINT - DEFAULT(false) - NULL
+foto - TEXT - NOTNULL -DEFAULT ("/img/default.jpg)
+weight_kg - INT - UNSIGNED - NULL
+width_m - FLOAT(3,2) - UNSIGNED - NULL
+height_m - FLOAT(3,2) - UNSIGNED - NULL
+rating - FLOAT(3,1) - UNSIGNED - NULL
+crash_test-rating - FLOAT(3,1) UNSIGNED - NULL
+optional - VARCHAR(255) - NULL
+key_type - VARCHAR() - NULL
