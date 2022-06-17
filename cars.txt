@@ -4,7 +4,7 @@ brand - VARCHAR(30) - NOTNULL
 model  - VARCHAR(255) - NOTNULL - UNIQUE
 description - TEXT - NULL
 fuel - VARCHAR(10) - NOTNULL
-price price - INT - UNSIGNED INT - NULL
+price - INT - UNSIGNED INT - NULL
 segment - VARCHAR(10) - NOTNULL
 power_kw/t - VARCHAR(15) - NOTNULL
 engine - VARCHAR(20) - NULL
@@ -12,6 +12,7 @@ automatict_Transmission - TINYINT - NOTNULL - DEFAULT(false)
 displacement_short - FLOAT(2,1) - NOTNULL           es 1.9
 tyre_type - VARCHAR(10) - NULL
 year - YEAR - NOTNULL
+distance_per_1000 - SMALLINT - NOTNULL
 doors - INT UNSIGNED - NULL
 passengers - INT UNSIGNED - NULL
 exterior_color - VARCHAR(15) - NULL
